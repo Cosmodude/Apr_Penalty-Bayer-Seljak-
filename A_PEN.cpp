@@ -30,7 +30,7 @@ inline void read(string file, vector<res> (&ares))
 
 	while (fp>>temp)
 	{
-		fp >> g.ra
+		fp >> g.ra;
 		fp >> g.dec;
 		fp >> g.pr;
 		ares.push_back(g);
