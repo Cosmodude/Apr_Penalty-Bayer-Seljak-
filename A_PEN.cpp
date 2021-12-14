@@ -54,14 +54,15 @@ double p_est(vector<res>(&ares),int c)
 
 int main()
 {
-	auto start_time = std::chrono::steady_clock::now();
+	
 
 	double c=0;
+	cin >> c;
+	auto start_time = std::chrono::steady_clock::now();
 	vector<res> ares;
 	read("sort_test_dip.txt", ares);
 	cout << "enter N" << endl;
 	//cout << log(2.8)<<endl;
-	cin >> c;
 	cout << endl;
 	cout <<setprecision(30)<< p_est(ares, c)<< endl;
 
