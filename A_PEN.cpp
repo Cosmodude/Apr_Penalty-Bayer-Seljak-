@@ -57,14 +57,16 @@ int main()
 	
 
 	double c=0;
+	cout << "enter N" << endl;
 	cin >> c;
 	auto start_time = std::chrono::steady_clock::now();
 	vector<res> ares;
 	read("sort_test_dip.txt", ares);
-	cout << "enter N" << endl;
 	//cout << log(2.8)<<endl;
+	//cout << ares[0].pr<<endl;
 	cout << endl;
 	cout <<setprecision(30)<< p_est(ares, c)<< endl;
+	cout << endl;
 
 	auto end_time = std::chrono::steady_clock::now();
 	auto elapsed_ns = std::chrono::duration_cast<std::chrono::nanoseconds>(end_time - start_time);
